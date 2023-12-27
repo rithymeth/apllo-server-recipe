@@ -2,7 +2,7 @@ const { ApolloServer } = require("apollo-server-express");
 const express = require("express");
 const mongoose = require("mongoose");
 
-const MONGODB = "mongodb+srv://admin:admin@cluster0.76upfhv.mongodb.net/?retryWrites=true&w=majority";
+const MONGODB = "mongodb+srv://admin:admin@cluster0.76upfhv.mongodb.net/";
 
 const typeDefs = require("./graphql/typeDefs");
 const resolvers = require("./graphql/resolvers");
