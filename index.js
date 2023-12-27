@@ -20,9 +20,8 @@ server.start().then(() => {
 })
   .then(() => {
     console.log("MongoDB Connection Successful");
-    const PORT = 4000;
-    app.listen(PORT, () => {
-      console.log(`Server is running on http://localhost:${PORT}${server.graphqlPath}`);
+    app.listen({ port: process.env.PORT || 4000 }, () => {
+      console.log(`Server is running on http://localhost:${process.env.PORT || 4000}${server.graphqlPath}`);
     });
   })
   .catch((error) => {
