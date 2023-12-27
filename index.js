@@ -21,7 +21,7 @@ server.start().then(() => {
   .then(() => {
     console.log("MongoDB Connection Successful");
     app.listen({ port: process.env.PORT || 5000 }, () => {
-      console.log(`Server is running on http://localhost:${process.env.PORT || 4000}${server.graphqlPath}`);
+      console.log(`Server is running on http://localhost:${process.env.PORT || 5000}${server.graphqlPath}`);
     });
   })
   .catch((error) => {
